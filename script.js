@@ -169,8 +169,6 @@ document.querySelectorAll('section').forEach(section => observer.observe(section
 
 
 // Contact form handling
-const contactForm = document.getElementById('contactForm');
-
 contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -183,7 +181,7 @@ contactForm.addEventListener('submit', async (e) => {
     };
 
     try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbyK4woPghiBspTVTv01985a-mv5vGZ8hC_ei1hGzJcLIceFY4wgzcqn_uCNaDGM2r5a/exec', {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbyb8jcbxYhThTbXwpLsEpGx_Eu6Numi6cUgfludjJtTs4x7lwnLvIbYS444NmhoHQ4O/exec', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
@@ -191,19 +189,15 @@ contactForm.addEventListener('submit', async (e) => {
             }
         });
 
-        // Parse response from Apps Script
-        const result = await response.json();
-
-        if (response.ok && result.result === "success") {
-            alert(`✅ Thank you, ${data.name || "Guest"}! Your message has been submitted.`);
+        if (response.ok) {
+            alert(`Thank you, ${data.name}! Your message has been submitted.`);
             contactForm.reset();
         } else {
-            alert(`⚠️ There was a problem submitting your form. (${result.error || "Unknown error"})`);
+            alert('There was a problem submitting your form. Please try again.');
         }
-
     } catch (error) {
         console.error('Error submitting form:', error);
-        alert('🚨 Network error. Please check your connection and try again.');
+        alert('Network error. Please check your connection and try again.');
     }
 });
 
