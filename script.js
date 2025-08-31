@@ -169,6 +169,8 @@ document.querySelectorAll('section').forEach(section => observer.observe(section
 
 
 // Contact form handling
+const contactForm = document.getElementById('contactForm');
+
 contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -181,7 +183,7 @@ contactForm.addEventListener('submit', async (e) => {
     };
 
     try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbw04GxmYh7zTiw5eEs8pHWpQHhfl0uY0nNeLxoiTESpR6YxvEcw1vMXh47xF9mXdOCu/exec', {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbyK4woPghiBspTVTv01985a-mv5vGZ8hC_ei1hGzJcLIceFY4wgzcqn_uCNaDGM2r5a/exec', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
@@ -189,18 +191,21 @@ contactForm.addEventListener('submit', async (e) => {
             }
         });
 
-        if (response.ok) {
-            alert(`Thank you, ${data.name}! Your message has been submitted.`);
+        // Parse response from Apps Script
+        const result = await response.json();
+
+        if (response.ok && result.result === "success") {
+            alert(`✅ Thank you, ${data.name || "Guest"}! Your message has been submitted.`);
             contactForm.reset();
         } else {
-            alert('There was a problem submitting your form. Please try again.');
+            alert(`⚠️ There was a problem submitting your form. (${result.error || "Unknown error"})`);
         }
+
     } catch (error) {
         console.error('Error submitting form:', error);
-        alert('Network error. Please check your connection and try again.');
+        alert('🚨 Network error. Please check your connection and try again.');
     }
 });
-
 
 // Remove parallax effect to fix button scrolling issue
 // The parallax effect was causing the buttons to move during scroll
@@ -364,3 +369,4 @@ const debouncedScroll = debounce(() => {
 
 
 window.addEventListener('scroll', debouncedScroll);
+
