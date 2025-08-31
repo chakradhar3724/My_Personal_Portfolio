@@ -181,7 +181,7 @@ contactForm.addEventListener('submit', async (e) => {
     };
 
     try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbyb8jcbxYhThTbXwpLsEpGx_Eu6Numi6cUgfludjJtTs4x7lwnLvIbYS444NmhoHQ4O/exec', {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbw04GxmYh7zTiw5eEs8pHWpQHhfl0uY0nNeLxoiTESpR6YxvEcw1vMXh47xF9mXdOCu/exec', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
@@ -361,5 +361,6 @@ if (navigator.userAgent.indexOf('Safari') !== -1 && navigator.userAgent.indexOf(
 const debouncedScroll = debounce(() => {
     // Scroll-related functions here
 }, 10);
+
 
 window.addEventListener('scroll', debouncedScroll);
