@@ -181,7 +181,7 @@ contactForm.addEventListener('submit', async (e) => {
     };
 
     try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbyb8jcbxYhThTbXwpLsEpGx_Eu6Numi6cUgfludjJtTs4x7lwnLvIbYS444NmhoHQ4O/exec', {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbzL0uJg5YLhAOOJTNK0tpSiiBBDokGIeDBLAvR3FCakL8dHWwsIn0HuqrvWSVp_b278/exec', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
@@ -363,4 +363,5 @@ const debouncedScroll = debounce(() => {
 
 
 window.addEventListener('scroll', debouncedScroll);
+
 
