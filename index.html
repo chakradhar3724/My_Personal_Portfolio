@@ -566,36 +566,36 @@
     <script src="script.js"></script>
 
     <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwSaNw9y9VqJ8DzBne2tt1IPv6RgOwBLGVOwvmjVS2WXSP8MJvTX9PrZFf6xqXAXo2k/exec'
-  const form = document.getElementById('contactForm')
-
   form.addEventListener('submit', e => {
-    e.preventDefault()
-    
-    // Change button text to show it's sending
-    const submitButton = form.querySelector('button[type="submit"]')
-    const originalText = submitButton.innerText
-    submitButton.innerText = "Sending..."
-    submitButton.disabled = true
+    e.preventDefault();
+    const submitButton = form.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+    submitButton.innerText = "Sending...";
 
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-          alert("Success! Your message has been sent.")
-          submitButton.innerText = originalText
-          submitButton.disabled = false
-          form.reset()
-      })
-      .catch(error => {
-          console.error('Error!', error.message)
-          alert("There was an error sending your message.")
-          submitButton.disabled = false
-          submitButton.innerText = originalText
-      })
-  })
+    fetch(scriptURL, { 
+        method: 'POST', 
+        body: new FormData(form),
+        mode: 'no-cors' // <--- Add this line to ignore the CORS redirect error
+    })
+    .then(() => {
+        // Since 'no-cors' doesn't return a readable response, 
+        // we assume success if the request was sent.
+        alert("Success! Your message has been sent.");
+        submitButton.innerText = "Send Message";
+        submitButton.disabled = false;
+        form.reset();
+    })
+    .catch(error => {
+        console.error('Error!', error.message);
+        alert("Something went wrong, but your message may have been sent.");
+        submitButton.disabled = false;
+    });
+});
 </script>
 </body>
 
 </html>
+
 
 
 
