@@ -60,7 +60,7 @@
         <div class="hero-image">
             <div class="profile-card">
                 <div class="profile-image">
-                    <img src="profile2.jpg" height="250px" width="200px" style="border-radius: 20px;">
+                    <img src="profile3.jpeg" height="320px" width="220px" style="border-radius: 20px;">
                 </div>
                 <div class="profile-info">
                     <h3>AI/ML Engineer</h3>
@@ -76,10 +76,10 @@
             <div class="about-content">
                 <div class="about-text">
                     <p style="text-align: justify;">
-                        I'm a passionate AI/ML Engineer and a recent graduate with a B.Tech in Computer Science, specializing in Cloud Computing, from SRM University, Chennai, with a CGPA of 9.64/10. My academic journey has been driven by curiosity and hands-on learning in the fields of artificial intelligence and machine learning.
+                        Hi, I’m Chakradhar, an AI/ML Engineer passionate about building intelligent, scalable, and human-centric systems. I completed my B.Tech in Computer Science (Cloud Computing) from SRM University, Chennai, graduating with a CGPA of 9.64/10, where I developed a strong foundation through hands-on work in machine learning and applied AI.
                     </p>
                     <p style="text-align: justify;">
-                        In Fall 2025, I will be joining the University at Buffalo (SUNY Buffalo) to pursue my Master’s in Computer Science and Engineering, with a focus on the AI/ML track, where I aim to deepen my expertise and contribute to impactful research and development in intelligent systems.
+                        I am currently pursuing my Master’s in Computer Science and Engineering at the University at Buffalo (SUNY Buffalo), specializing in the AI/ML track, with a GPA of 3.9 after my first semester. My interests include developing practical AI solutions, automation, and end-to-end intelligent systems that create real-world impact.
                     </p>
                     <div class="stats">
                         <div class="stat">
@@ -87,7 +87,7 @@
                             <p>Publications</p>
                         </div>
                         <div class="stat">
-                            <h3>9.64</h3>
+                            <h3>3.9</h3>
                             <p>CGPA</p>
                         </div>
                         <div class="stat">
@@ -112,7 +112,7 @@
                             </div>
                             <div class="fact">
                                 <i class="fas fa-envelope"></i>
-                                <span>pchakradharreddy2004@gmail.com</span>
+                                <span>chakradhar3724@gmail.com</span>
                             </div>
                             <div class="fact">
                                 <i class="fas fa-phone"></i>
@@ -334,6 +334,19 @@
                         <span>Environmental AI</span>
                     </div>
                 </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <h3>Student Performance Prediction</h3>
+                    <p style="text-align: justify;">Predicts student academic performance using demographic and academic features through supervised machine learning.</p>
+                    <div class="project-tech">
+                        <span>Random Forest Classifier</span>
+                        <span>Machine Learning</span>
+                        <span>Student Performance</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -485,7 +498,7 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p>pchakradharreddy2004@gmail.com</p>
+                            <p>chakradhar3724@gmail.com</p>
                         </div>
                     </div>
                     
@@ -507,11 +520,10 @@
                     
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/pchakradhar-reddy/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/chakradhar" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="mailto:pchakradharreddy2004@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/chakradhar3724" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:chakradhar3724@gmail.com"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
-                <!--
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
@@ -529,7 +541,6 @@
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
-                -->
             </div>
         </div>
                 
@@ -553,6 +564,35 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwSaNw9y9VqJ8DzBne2tt1IPv6RgOwBLGVOwvmjVS2WXSP8MJvTX9PrZFf6xqXAXo2k/exec'
+  const form = document.getElementById('contactForm')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    
+    // Change button text to show it's sending
+    const submitButton = form.querySelector('button[type="submit"]')
+    const originalText = submitButton.innerText
+    submitButton.innerText = "Sending..."
+    submitButton.disabled = true
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          alert("Success! Your message has been sent.")
+          submitButton.innerText = originalText
+          submitButton.disabled = false
+          form.reset()
+      })
+      .catch(error => {
+          console.error('Error!', error.message)
+          alert("There was an error sending your message.")
+          submitButton.disabled = false
+          submitButton.innerText = originalText
+      })
+  })
+</script>
 </body>
 
 </html>
