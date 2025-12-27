@@ -564,37 +564,49 @@
     </footer>
 
     <script src="script.js"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwSaNw9y9VqJ8DzBne2tt1IPv6RgOwBLGVOwvmjVS2WXSP8MJvTX9PrZFf6xqXAXo2k/exec'; // Double check this is correct!
+  const form = document.getElementById('contactForm');
 
-    <script>
   form.addEventListener('submit', e => {
     e.preventDefault();
-    const submitButton = form.querySelector('button[type="submit"]');
-    submitButton.disabled = true;
-    submitButton.innerText = "Sending...";
+    const btn = form.querySelector('button[type="submit"]');
+    const originalText = btn.innerText;
+    
+    // UI Feedback
+    btn.disabled = true;
+    btn.innerText = "Sending...";
 
-    fetch(scriptURL, { 
-        method: 'POST', 
-        body: new FormData(form),
-        mode: 'no-cors' // <--- Add this line to ignore the CORS redirect error
-    })
-    .then(() => {
-        // Since 'no-cors' doesn't return a readable response, 
-        // we assume success if the request was sent.
+    const formData = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    
+    xhr.open("POST", scriptURL);
+    
+    xhr.onreadystatechange = function() {
+      // Google Apps Script usually returns a 302 redirect, 
+      // which XHR follows automatically to a success state.
+      if (xhr.readyState === 4) {
         alert("Success! Your message has been sent.");
-        submitButton.innerText = "Send Message";
-        submitButton.disabled = false;
         form.reset();
-    })
-    .catch(error => {
-        console.error('Error!', error.message);
-        alert("Something went wrong, but your message may have been sent.");
-        submitButton.disabled = false;
-    });
-});
+        btn.disabled = false;
+        btn.innerText = originalText;
+      }
+    };
+
+    xhr.onerror = function() {
+      console.error("Network Error occurred.");
+      alert("Submission finished. Please check your sheet!");
+      btn.disabled = false;
+      btn.innerText = originalText;
+    };
+
+    xhr.send(formData);
+  });
 </script>
 </body>
 
 </html>
+
 
 
 
