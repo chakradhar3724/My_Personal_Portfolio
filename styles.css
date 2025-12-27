@@ -182,9 +182,20 @@ body {
     flex: 1;
     max-width: 12000px;
     padding: 200px 20px;
-    padding-left: clamp(16px, 8vw, 170px);
     z-index: 2;
 }
+
+.hero-content {
+    padding-left: 0;   /* mobile default */
+}
+
+/* Desktop only */
+@media (min-width: 768px) {
+    .hero-content {
+        padding-left: 170px;
+    }
+}
+
 
 .hero h1 {
     font-size: 3.5rem;
@@ -1191,5 +1202,6 @@ html {
     z-index: 10;
     position: relative;
 }
+
 
 
