@@ -363,5 +363,3 @@ const debouncedScroll = debounce(() => {
 
 
 window.addEventListener('scroll', debouncedScroll);
-
-
