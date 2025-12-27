@@ -186,7 +186,7 @@ body {
 }
 
 .hero-content {
-    padding-left: 0;   /* mobile default */
+    padding-left: 2px;   /* mobile default */
 }
 
 /* Desktop only */
@@ -1202,6 +1202,7 @@ html {
     z-index: 10;
     position: relative;
 }
+
 
 
 
