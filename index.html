@@ -592,20 +592,21 @@
         btn.innerText = originalText;
       }
     };
-
+    ```
     xhr.onerror = function() {
       console.error("Submitting the Form.");
       alert("Submission Completed, Thank you.");
       btn.disabled = false;
       btn.innerText = originalText;
     };
-
+    ```
     xhr.send(formData);
   });
 </script>
 </body>
 
 </html>
+
 
 
 
