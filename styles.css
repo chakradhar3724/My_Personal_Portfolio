@@ -405,7 +405,21 @@ section {
     overflow: hidden;
     box-shadow: var(--shadow-large);
     border: 1px solid var(--border-color);
-    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-card {
+        margin-top: 0px;
+    }
 }
 
 .card-header {
@@ -1202,10 +1216,3 @@ html {
     z-index: 10;
     position: relative;
 }
-
-
-
-
-
-
-
