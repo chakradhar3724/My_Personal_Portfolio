@@ -405,7 +405,7 @@ section {
     overflow: hidden;
     box-shadow: var(--shadow-large);
     border: 1px solid var(--border-color);
-    margin-top: -100px;
+    margin-top: -80px;
 }
 
 .card-header {
@@ -1202,6 +1202,7 @@ html {
     z-index: 10;
     position: relative;
 }
+
 
 
 
