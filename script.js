@@ -5,7 +5,7 @@ const savedTheme = localStorage.getItem('portfolio-theme');
 if (savedTheme === 'dark' || savedTheme === 'light') {
   root.dataset.theme = savedTheme;
 } else {
-  root.dataset.theme = 'light';
+  root.dataset.theme = 'dark';
 }
 
 function updateThemeControl() {
