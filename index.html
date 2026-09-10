@@ -1,619 +1,379 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chakradhar Reddy Peddavenkatagari</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Chakradhar Reddy Peddavenkatagari — software engineer and computer science graduate researcher building AI/ML systems, retrieval applications, computer vision pipelines, and cloud software." />
+  <meta name="theme-color" content="#f7f8fb" />
+  <title>Chakradhar Reddy | Software Engineer · AI/ML Systems</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Theme Toggle -->
-    <div class="theme-toggle">
-        <i class="fas fa-sun" id="theme-icon"></i>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Chakradhar Reddy home">
+        <span class="brand-mark">PCR</span>
+        <span>Chakradhar</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode">Dark</button>
+        <a class="resume-link" href="Chakradhar's_Resume_Software_Engineer.pdf" target="_blank" rel="noopener">Resume ↗</a>
+      </div>
     </div>
+  </header>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h3>Chakradhar </h3>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#testimonial" class="nav-link">Testimonial</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#publications" class="nav-link">Publications</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker"><span class="status-dot"></span> Software Engineer · AI/ML Systems · Buffalo, NY</p>
+          <h1>I build reliable software for <span>intelligent systems.</span></h1>
+          <p class="hero-summary">Graduate Computer Science researcher at the University at Buffalo working across Python software, retrieval systems, computer vision, machine learning pipelines, and cloud-based applications.</p>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Chakradhar </span></h1>
-            <div class="typing-container">
-                <span class="typing-text"></span>
-                <span class="cursor"></span>
-            </div>
-            <p class="hero-description" style="text-align: justify;">
-                AI/ML Engineer with strong foundations in machine learning, deep learning, cloud computing, and web development. 
-                Published researcher with experience in biometric systems, image analysis, and cloud-based applications.
-            </p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                <a href="#projects" class="btn btn-secondary">View My Work</a>
-                <a href="Chakradhar_s_Resume (5).pdf" download= "Chakradhar's Resume" class="btn btn-secondary">
-                    <i class="fas fa-download"></i> Download Resume</a>
-            </div>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View selected work</a>
+            <a class="button secondary" href="mailto:chakradhar3724@gmail.com">Contact me</a>
+          </div>
+
+          <div class="social-links" aria-label="Professional links">
+            <a href="https://github.com/chakradhar3724" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/pchakradhar-reddy/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
         </div>
-        <div class="hero-image">
-            <div class="profile-card">
-                <div class="profile-image">
-                    <img src="profile3.jpeg" height="320px" width="220px" style="border-radius: 20px;">
-                </div>
-                <div class="profile-info">
-                    <h3>AI/ML Engineer</h3>
-                </div>
-            </div>
-        </div>
+
+        <aside class="hero-profile" aria-label="Profile">
+          <div class="portrait-wrap">
+            <img src="https://raw.githubusercontent.com/chakradhar3724/My_Personal_Portfolio/main/profile3.jpeg" alt="Portrait of Chakradhar Reddy" />
+          </div>
+          <div class="profile-caption">
+            <strong>Chakradhar Reddy Peddavenkatagari</strong>
+            <span>M.S. Computer Science & Engineering · University at Buffalo</span>
+          </div>
+        </aside>
+      </div>
+
+      <div class="container proof-strip" aria-label="Selected results">
+        <div><strong>80%</strong><span>processing throughput improvement</span></div>
+        <div><strong>95.3%</strong><span>worst-group accuracy</span></div>
+        <div><strong>3.958 / 4</strong><span>graduate GPA</span></div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p style="text-align: justify;">
-                        Hi, I’m Chakradhar, an AI/ML Engineer passionate about building intelligent, scalable, and human-centric systems. I completed my B.Tech in Computer Science (Cloud Computing) from SRM University, Chennai, graduating with a CGPA of 9.64/10, where I developed a strong foundation through hands-on work in machine learning and applied AI.
-                    </p>
-                    <p style="text-align: justify;">
-                        I am currently pursuing my Master’s in Computer Science and Engineering at the University at Buffalo (SUNY Buffalo), specializing in the AI/ML track, with a GPA of 3.9 after my first semester. My interests include developing practical AI solutions, automation, and end-to-end intelligent systems that create real-world impact.
-                    </p>
-                    <div class="stats">
-                        <div class="stat">
-                            <h3>5+</h3>
-                            <p>Publications</p>
-                        </div>
-                        <div class="stat">
-                            <h3>3.9</h3>
-                            <p>CGPA</p>
-                        </div>
-                        <div class="stat">
-                            <h3>5+</h3>
-                            <p>Major Projects</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="about-card">
-                        <div class="card-header">
-                            <h3>Quick Facts</h3>
-                        </div>
-                        <div class="card-content">
-                            <div class="fact">
-                                <i class="fas fa-graduation-cap"></i>
-                                <span>Masters in Computer Science</span>
-                            </div>
-                            <div class="fact">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Buffalo, New York, United States of America</span>
-                            </div>
-                            <div class="fact">
-                                <i class="fas fa-envelope"></i>
-                                <span>chakradhar3724@gmail.com</span>
-                            </div>
-                            <div class="fact">
-                                <i class="fas fa-phone"></i>
-                                <span>+1 (716)292-2583</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <p class="section-label">Experience</p>
+            <h2>Engineering work with measurable outcomes.</h2>
+          </div>
+          <p>I focus on the software around models as much as the models themselves: reusable components, data pipelines, evaluation, retrieval, performance, and maintainability.</p>
         </div>
+
+        <div class="experience-list">
+          <article class="experience-item">
+            <div class="experience-meta">
+              <span>Jan 2026 — Present</span>
+              <span>Buffalo, NY</span>
+            </div>
+            <div class="experience-content">
+              <div class="role-line">
+                <div>
+                  <h3>Research Assistant — AI Software Development</h3>
+                  <p class="organization">University at Buffalo, SUNY</p>
+                </div>
+                <span class="role-tag">Research Engineering</span>
+              </div>
+              <ul>
+                <li>Developed a modular assistive-navigation pipeline in Python and PyTorch around a frozen DINOv2 vision encoder, semantic-segmentation decoder, and task-specific components.</li>
+                <li>Built reusable modules for ADE20K data loading, preprocessing, training, validation, checkpointing, and inference to support reproducible experimentation.</li>
+                <li>Improved training and evaluation workflows with mixed precision, automated checkpoint selection, and quantitative monitoring, reaching <strong>50.1% validation mIoU</strong> and <strong>83.2% pixel accuracy</strong>.</li>
+                <li>Designed extensible interfaces for future intent-routing and vision-language integration; the work contributed to a competitively selected abstract presented at the Stony Brook AI Symposium.</li>
+              </ul>
+              <div class="tags"><span>Python</span><span>PyTorch</span><span>DINOv2</span><span>Computer Vision</span><span>ML Pipelines</span></div>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-meta">
+              <span>Jan 2025 — Jun 2025</span>
+              <span>Remote · India</span>
+            </div>
+            <div class="experience-content">
+              <div class="role-line">
+                <div>
+                  <h3>Software Development Intern</h3>
+                  <p class="organization">Excl Solutions Pvt. Ltd.</p>
+                </div>
+                <span class="role-tag">Python · Retrieval</span>
+              </div>
+              <ul>
+                <li>Developed and optimized end-to-end Python image-processing pipelines for large-scale TEM image analysis, improving processing throughput by up to <strong>80%</strong>.</li>
+                <li>Built an embedding-based semantic retrieval application for natural-language search across internal datasets and technical documents.</li>
+                <li>Implemented modular components for ingestion, preprocessing, model inference, vector retrieval, and result generation to improve maintainability and reuse.</li>
+                <li>Collaborated with technical stakeholders to troubleshoot pipeline issues and translate requirements into reliable software improvements.</li>
+              </ul>
+              <div class="tags"><span>Python</span><span>Image Processing</span><span>Embeddings</span><span>Vector Retrieval</span><span>Data Pipelines</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Testimonial Section -->
-    <section id="testimonial" class="testimonial">
-        <div class="container">
-            <h2 class="section-title">What People Say</h2>
-            <div class="testimonial-content">
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                        <div class="testimonial-info">
-                            <h3>Shivashanker Reddy Dhadi</h3>
-                            <p>CEO, Excl Solutions Pvt. Ltd.</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-text">
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p style="text-align: justify;">
-                            "Chakradhar demonstrated exceptional technical excellence and innovation during his AI internship with us. 
-                            His work on machine learning techniques for TEM image analysis and particle detection significantly improved 
-                            our pipeline accuracy and performance by up to 80%. His initiative in developing an AI-powered internal chatbot 
-                            has been instrumental in helping our teams access project documents and datasets efficiently. 
-                            I highly recommend Chakradhar for his technical skills, innovative thinking, and professional approach."
-                        </p>
-                    </div>
-                    <div class="testimonial-rating">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <span class="rating-text">Outstanding Performance</span>
-                    </div>
-                </div>
-            </div>
+    <section class="section section-tint" id="projects">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <p class="section-label">Selected projects</p>
+            <h2>Projects that best support software engineering roles.</h2>
+          </div>
+          <p>Selected for implementation depth across retrieval, security, cloud systems, computer vision, and production-oriented machine learning.</p>
         </div>
+
+        <div class="project-stack">
+          <article class="project-feature">
+            <div class="project-copy">
+              <div class="project-heading-row">
+                <span class="project-index">01</span>
+                <span class="project-type">Retrieval · LLM Application</span>
+              </div>
+              <h3>RAG-Based Document Question Answering System</h3>
+              <p>Built an end-to-end document-grounded question-answering application that converts uploaded PDFs into searchable vector representations and uses retrieved context to reduce unsupported LLM responses.</p>
+              <div class="project-points">
+                <span>Multi-document ingestion</span>
+                <span>FAISS vector search</span>
+                <span>800 / 150 chunk strategy</span>
+                <span>Grounded response generation</span>
+              </div>
+              <div class="tags"><span>Python</span><span>LangChain</span><span>FAISS</span><span>Gemini API</span><span>Streamlit</span></div>
+              <a class="text-link" href="https://github.com/chakradhar3724/RAG_Chatbot" target="_blank" rel="noopener">View repository ↗</a>
+            </div>
+            <div class="project-visual architecture" aria-hidden="true">
+              <div class="arch-label">SYSTEM FLOW</div>
+              <div class="arch-node strong">PDF documents</div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-row"><span>Chunking</span><span>Embeddings</span></div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-node accent">FAISS vector index</div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-row"><span>Retriever</span><span>Gemini</span></div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-node">Grounded answer</div>
+            </div>
+          </article>
+
+          <article class="project-feature reverse">
+            <div class="project-copy">
+              <div class="project-heading-row">
+                <span class="project-index">02</span>
+                <span class="project-type">Robust ML · Computer Vision</span>
+              </div>
+              <h3>Robust Image Classification under Spurious Correlations</h3>
+              <p>Built and evaluated a Waterbirds classification pipeline to diagnose shortcut learning and improve robustness using DINOv2 representations, Grad-CAM, PCA, Core-Aligned Regularization, and Group DRO.</p>
+              <div class="metric-row">
+                <div><strong>97.6%</strong><span>accuracy</span></div>
+                <div><strong>94.8%</strong><span>F1</span></div>
+                <div><strong>95.3%</strong><span>worst-group accuracy</span></div>
+              </div>
+              <div class="tags"><span>PyTorch</span><span>DINOv2</span><span>Group DRO</span><span>Grad-CAM</span><span>PCA</span></div>
+              <a class="text-link" href="https://github.com/chakradhar3724/spurious-correlation-classification" target="_blank" rel="noopener">View repository ↗</a>
+            </div>
+            <div class="project-visual comparison" aria-hidden="true">
+              <div class="arch-label">ROBUSTNESS COMPARISON</div>
+              <div class="bar-row"><span>ViT + ERM</span><div><i style="width:66.8%"></i></div><b>66.8%</b></div>
+              <div class="bar-row"><span>DINOv2 + ERM</span><div><i style="width:87.3%"></i></div><b>87.3%</b></div>
+              <div class="bar-row"><span>DINOv2 + Group DRO</span><div><i style="width:95.3%"></i></div><b>95.3%</b></div>
+              <p>Worst-group accuracy</p>
+            </div>
+          </article>
+
+          <article class="project-feature">
+            <div class="project-copy">
+              <div class="project-heading-row">
+                <span class="project-index">03</span>
+                <span class="project-type">Cloud · Security · Data</span>
+              </div>
+              <h3>Cloud-Based Medical Data Repository</h3>
+              <p>Designed a cloud-oriented healthcare platform for secure patient-data sharing and real-time ambulance tracking, combining application workflows with encryption and integrity controls.</p>
+              <div class="project-points">
+                <span>Secure patient-data exchange</span>
+                <span>Real-time ambulance tracking</span>
+                <span>AES encryption</span>
+                <span>SHA-256 integrity</span>
+              </div>
+              <div class="tags"><span>Cloud Computing</span><span>SaaS</span><span>Security</span><span>Healthcare Systems</span></div>
+            </div>
+            <div class="project-visual architecture" aria-hidden="true">
+              <div class="arch-label">APPLICATION FLOW</div>
+              <div class="arch-row"><span>Ambulance</span><span>Hospital</span></div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-node accent">Secure cloud layer</div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-row"><span>AES</span><span>SHA-256</span></div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-node">Patient data repository</div>
+            </div>
+          </article>
+        </div>
+
+        <div class="more-work-header">
+          <h3>Additional relevant work</h3>
+          <p>Earlier work that adds security and deep-learning depth to the portfolio.</p>
+        </div>
+
+        <div class="more-work-grid">
+          <article class="compact-project">
+            <span class="compact-number">04</span>
+            <h4>Biometric Authentication in Cloud Computing</h4>
+            <p>Enhanced a biometric authentication concept using AES and RSA encryption, SHA-256 hashing, and blockchain-based integrity mechanisms for cloud data protection.</p>
+            <div class="tags"><span>Python</span><span>Encryption</span><span>Cloud Security</span><span>Blockchain</span></div>
+          </article>
+
+          <article class="compact-project">
+            <span class="compact-number">05</span>
+            <h4>CAPTCHA Recognition System</h4>
+            <p>Implemented a CNN-LSTM recognition pipeline for distorted CAPTCHA images, combining visual feature extraction with sequential decoding and achieving <strong>99.54% accuracy</strong>.</p>
+            <div class="tags"><span>CNN</span><span>LSTM</span><span>Computer Vision</span><span>Deep Learning</span></div>
+            <a class="text-link" href="https://github.com/chakradhar3724/CNN_LSTM" target="_blank" rel="noopener">View repository ↗</a>
+          </article>
+        </div>
+
+        <div class="archive-note">
+          <p><strong>More work:</strong> Additional experiments, coursework, and earlier repositories are available on GitHub.</p>
+          <a class="text-link" href="https://github.com/chakradhar3724?tab=repositories" target="_blank" rel="noopener">Browse all GitHub repositories ↗</a>
+        </div>
+      </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">January 2025 - June 2025</div>
-                    <div class="timeline-content">
-                        <h3>AI Intern</h3>
-                        <h4>Excl Solutions Pvt. Ltd. | Bangalore, India (Remote)</h4>
-                        <ul style="text-align: justify;">
-                            <li>Applied machine learning techniques for TEM image analysis and particle detection, improving pipeline accuracy and performance by up to 80%</li>
-                            <li>Developed an AI-powered internal chatbot to assist teams in accessing project documents and datasets efficiently</li>
-                            <li>Received a Letter of Recommendation from the CEO for technical excellence and innovation</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <section class="section" id="publications">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <p class="section-label">Selected publications</p>
+            <h2>Research most relevant to software and AI engineering.</h2>
+          </div>
+          <p>Selected research spanning retrieval, NLP, computer vision, ranking, and intelligent-system development.</p>
         </div>
+
+        <div class="publication-list">
+          <article class="publication-item">
+            <div class="publication-meta"><span>2024</span><span>NLP · Sequence Modeling</span></div>
+            <div class="publication-main">
+              <h3>Neural Sequence-to-Sequence Modeling with Attention for Abstractive Text Summarization</h3>
+              <p>Designed a sequence-to-sequence architecture with attention to improve contextual understanding and abstractive summary generation.</p>
+              <a class="text-link" href="https://arxiv.org/abs/2404.08685" target="_blank" rel="noopener">View paper ↗</a>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-meta"><span>2024</span><span>Computer Vision · OCR</span></div>
+            <div class="publication-main">
+              <h3>Efficient CAPTCHA Image Recognition Using Convolutional Neural Networks and Long Short-Term Memory Networks</h3>
+              <p>Combined CNN-based visual feature extraction with LSTM-based sequence decoding for robust CAPTCHA recognition, reporting peak accuracy of 99.54%.</p>
+              <a class="text-link" href="https://ijsrem.com/download/efficient-captcha-image-recognition-using-convolutional-neural-networks-and-long-short-term-memory-networks/" target="_blank" rel="noopener">View paper ↗</a>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-meta"><span>2024</span><span>Information Retrieval · NLP</span></div>
+            <div class="publication-main">
+              <h3>Empowering Information Retrieval: A Framework for Effective Data Summarization Using NLP and SBERT</h3>
+              <p>Explored semantic retrieval and summarization using Sentence-BERT, combining morphological and semantic analysis to extract and condense information from large data sources.</p>
+              <a class="text-link" href="https://www.irjmets.com/paperdetail.php?paperId=75f345a21bf48b607f34531ef5dde118&title=Empowering+Information+Retrieval%3A+A+Framework+for+Effective+Data+Summarization+Using+NLP+and+SBERT&authpr=Chakradhar+Reddy" target="_blank" rel="noopener">View paper ↗</a>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-meta"><span>2024</span><span>Search · Ranking · Vision</span></div>
+            <div class="publication-main">
+              <h3>Hypergraph Fusion and Pseudo-Relevance Feedback for Enhanced Tag-Based Image Retrieval</h3>
+              <p>Investigated retrieval quality using global/local visual features, hypergraph fusion, and pseudo-relevance feedback to improve tag-based image ranking.</p>
+              <a class="text-link" href="https://www.irjmets.com/paperdetail.php?paperId=a58fe5fca987852f8e07a4b18b021105&title=Hypergraph+Fusion+and+Pseudo-Relevance+Feedbackfor+Enhanced+Tag-Based+Image+Retrieval+&authpr=Chakradhar+Reddy" target="_blank" rel="noopener">View paper ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-item">
-                        <span>Python</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>SQL</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>C++</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>C</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="75%"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Libraries & Frameworks</h3>
-                    <div class="skill-item">
-                        <span>TensorFlow</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Keras</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>OpenCV</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="80%"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
-                    <div class="skill-item">
-                        <span>Git</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Jupyter Notebook</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Google Colab</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <span>AWS Cloud</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="75%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="section section-tint" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="section-label">About</p>
+          <h2>Software engineering, strengthened by research depth.</h2>
+          <p class="about-copy">I am pursuing an M.S. in Computer Science and Engineering at the University at Buffalo after completing a B.Tech in Computer Science with a specialization in Cloud Computing at SRM University. I enjoy building systems that connect software engineering with machine learning: reliable data flows, retrieval, APIs and interfaces, model evaluation, cloud applications, and performance optimization.</p>
         </div>
+
+        <div class="details-panel">
+          <div class="detail-row"><span>Languages</span><strong>Python · JavaScript · SQL · C++ · C</strong></div>
+          <div class="detail-row"><span>Software & Web</span><strong>REST APIs · HTML · CSS · Streamlit · API Integration</strong></div>
+          <div class="detail-row"><span>AI / ML</span><strong>PyTorch · TensorFlow · Scikit-learn · OpenCV · NLP · RAG · LLMs</strong></div>
+          <div class="detail-row"><span>Data & Retrieval</span><strong>NumPy · Pandas · FAISS · LangChain</strong></div>
+          <div class="detail-row"><span>Cloud & Tools</span><strong>AWS · Firebase · Git · GitHub · Jupyter · Google Colab</strong></div>
+        </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Biometric Authentication in Cloud Computing</h3>
-                    <p style="text-align: justify;">Enhanced biometric authentication system utilizing AES and RSA encryption, SHA-256 hashing, and blockchain technology to ensure data integrity and privacy.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Blockchain</span>
-                        <span>Encryption</span>
-                        <span>Cloud Computing</span>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-hospital"></i>
-                    </div>
-                    <h3>Cloud-Based Medical Data Repository</h3>
-                    <p style="text-align: justify;">Built a cloud-based healthcare platform enabling real-time ambulance tracking and secure patient data sharing using AES and SHA-256 encryption.</p>
-                    <div class="project-tech">
-                        <span>SaaS</span>
-                        <span>Healthcare</span>
-                        <span>Cloud</span>
-                        <span>Security</span>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>CAPTCHA Recognition System</h3>
-                    <p style="text-align: justify;">Engineered a CAPTCHA recognition system using CNNs and LSTMs, achieving 99.54% accuracy in handling complex CAPTCHA images.</p>
-                    <div class="project-tech">
-                        <span>CNN</span>
-                        <span>LSTM</span>
-                        <span>Deep Learning</span>
-                        <span>Computer Vision</span>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-water"></i>
-                    </div>
-                    <h3>Underwater Garbage Detection</h3>
-                    <p style="text-align: justify;">Real-time underwater garbage detection system using advanced YOLO-based object detection and image segmentation models.</p>
-                    <div class="project-tech">
-                        <span>YOLO</span>
-                        <span>Object Detection</span>
-                        <span>Image Segmentation</span>
-                        <span>Environmental AI</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fa-regular fa-user"></i>
-                    </div>
-                    <h3>Student Performance Prediction</h3>
-                    <p style="text-align: justify;">Predicts student academic performance using demographic and academic features through supervised machine learning.</p>
-                    <div class="project-tech">
-                        <span>Random Forest Classifier</span>
-                        <span>Machine Learning</span>
-                        <span>Student Performance</span>
-                    </div>
-                </div>
-            </div>
+    <section class="section education-section">
+      <div class="container">
+        <div class="section-intro compact-intro">
+          <div><p class="section-label">Education & recognition</p><h2>Academic foundation.</h2></div>
         </div>
+
+        <div class="education-grid">
+          <article>
+            <span class="education-date">2025 — 2027</span>
+            <h3>University at Buffalo, SUNY</h3>
+            <p>M.S. Computer Science and Engineering</p>
+            <strong>CGPA 3.958 / 4</strong>
+          </article>
+          <article>
+            <span class="education-date">2021 — 2025</span>
+            <h3>SRM University</h3>
+            <p>B.Tech Computer Science · Cloud Computing</p>
+            <strong>CGPA 9.64 / 10</strong>
+          </article>
+        </div>
+
+        <div class="recognition-row">
+          <div><strong>#1</strong><span>in class in Kaggle-hosted deep-learning wildfire competition</span></div>
+          <div><strong>#2 globally</strong><span>in the same competition</span></div>
+          <div><strong>20+</strong><span>student employees coordinated as a campus dining student leader</span></div>
+        </div>
+      </div>
     </section>
 
-    <!-- Publications Section -->
-    <section id="publications" class="publications">
-        <div class="container">
-            <h2 class="section-title">Publications</h2>
-            <div class="publications-list">
-                <div class="publication-item">
-                    <div class="publication-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <div class="publication-content">
-                        <h3 style="text-align: justify;">Neural Sequence-to-Sequence Modeling with Attention by Leveraging Deep Learning Architectures for Enhanced Contextual Understanding in Abstractive Text Summarization</h3>
-                        <p style="text-align: justify;">Developed a deep learning-based seq2seq model with attention to improve abstractive summarization. Leveraged LSTM layers to enhance contextual understanding in long text sequences. The model generates summaries that are more coherent and semantically rich. Demonstrated improved performance over traditional summarization techniques.</p>
-                        <div class="publication-meta">
-                            <span><i class="fas fa-calendar"></i> 2024</span>
-                            <span><i class="fas fa-tag"></i><u style="text-decoration-color:skyblue"><a href="https://arxiv.org/abs/2404.08685" target="_blank" style="color:skyblue">Show Publication</a></u></span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="publication-item">
-                    <div class="publication-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <div class="publication-content">
-                        <h3 style="text-align: justify;">Efficient CAPTCHA Image Recognition Using Convolutional Neural Networks and Long Short-Term Memory Networks</h3>
-                        <p style="text-align: justify;">Proposed a hybrid deep learning model combining Convolutional Neural Networks (CNNs) and Long Short-Term Memory (LSTM) networks for accurate CAPTCHA recognition. The system effectively handles complex and distorted CAPTCHA images through preprocessing and robust spatial feature extraction. Leveraged CNNs for visual pattern recognition and LSTMs for sequential decoding. Achieved a peak accuracy of 99.54%, outperforming existing models in the field.</p>
-                        <div class="publication-meta">
-                            <span><i class="fas fa-calendar"></i> 2024</span>
-                            <span><i class="fas fa-tag"></i><u style="text-decoration-color:skyblue"><a href="https://ijsrem.com/download/efficient-captcha-image-recognition-using-convolutional-neural-networks-and-long-short-term-memory-networks/" target="_blank" style="color:skyblue">Show Publication</a></u></span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="publication-item">
-                    <div class="publication-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <div class="publication-content">
-                        <h3 style="text-align: justify;">Real-time Underwater Garbage Detection with YOLO based Object Detection and Image Segmentation Models</h3>
-                        <p style="text-align: justify;">In this research, we tackle the urgent issue of real-time underwater garbage detection using state-of-the-art technologies. By integrating YOLO-based Object Detection and Image Segmentation Models, we've developed a robust system that can accurately identify and classify various types of underwater debris, even in challenging underwater environments.</p>
-                        <div class="publication-meta">
-                            <span><i class="fas fa-calendar"></i> 2024</span>
-                            <span><i class="fas fa-tag"></i><u style="text-decoration-color:skyblue"><a href="https://www.jetir.org/view?paper=JETIR2403609" target="_blank" style="color:skyblue">Show Publication</a></u></span>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="publication-item">
-                    <div class="publication-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <div class="publication-content">
-                        <h3 style="text-align: justify;">Artificial Intelligence and Machine Learning: The Influence of Machine Learning on Predictive Analytics in Healthcare</h3>
-                        <p style="text-align: justify;">This research on the transformative impact of Artificial Intelligence (AI) and Machine Learning (ML) in healthcare. Our paper delves into how predictive analytics, powered by ML algorithms, is revolutionizing patient outcomes, reducing costs, and optimizing resource management. Discover the applications, benefits, challenges, and future prospects of this cutting-edge technology in healthcare.</p>
-                        <div class="publication-meta">
-                            <span><i class="fas fa-calendar"></i> 2024</span>
-                            <span><i class="fas fa-tag"></i><u style="text-decoration-color:skyblue"><a href="https://iaeme.com/Home/article_id/IJMLC_02_02_001" target="_blank" style="color:skyblue">Show Publication</a></u></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <div class="publication-content">
-                        <h3 style="text-align: justify;">Empowering Information Retrieval: A Framework for Effective Data Summarization Using NLP and SBERT</h3>
-                        <p style="text-align: justify;">Developed a framework that combines NLP techniques with Sentence-BERT (SBERT) to enhance information retrieval from large online data sources. The system integrates morphological and semantic analysis to identify and extract key insights. Introduced a "summary summarization" module that condenses critical information into concise, meaningful outputs. The approach significantly improves the efficiency and accuracy of data comprehension in information-heavy environments.</p>
-                        <div class="publication-meta">
-                            <span><i class="fas fa-calendar"></i> 2024</span>
-                            <span><i class="fas fa-tag"></i><u style="text-decoration-color:skyblue"><a href="https://www.irjmets.com/paperdetail.php?paperId=75f345a21bf48b607f34531ef5dde118&title=Empowering+Information+Retrieval%3A+A+Framework+for+Effective+Data+Summarization+Using+NLP+and+SBERT&authpr=Chakradhar+Reddy" target="_blank" style="color:skyblue">Show Publication</a></u></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <div class="publication-content">
-                        <h3 style="text-align: justify;">Evaluation Methodologies and Performance Metrics in Supervised Named Entity Recognition (NER) for Journal Articles: A Critical Analysis</h3>
-                        <p style="text-align: justify;">This paper delves into the critical field of Named Entity Recognition (NER) in natural language processing, specifically focusing on journal articles. We provide an in-depth analysis of supervised learning approaches for NER, highlighting key evaluation metrics like precision, recall, and F1-score at both token and entity levels.</p>
-                        <div class="publication-meta">
-                            <span><i class="fas fa-calendar"></i> 2024</span>
-                            <span><i class="fas fa-tag"></i><u style="text-decoration-color:skyblue"><a href="https://www.irjmets.com/paperdetail.php?paperId=5892946fb8895efc01f001fc6e21903b&title=Evaluation+Methodologies+and+PerformanceMetrics+in+Supervised+NER+for+Journal+Articles%3A+ACritical+Analysis+&authpr=Chakradhar+Reddy" target="_blank" style="color:skyblue">Show Publication</a></u></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <div class="publication-content">
-                        <h3 style="text-align: justify;">Hypergraph Fusion and Pseudo-Relevance Feedback for Enhanced Tag-Based Image Retrieval</h3>
-                        <p style="text-align: justify;">Proposed a novel method for tag-based image retrieval (TBIR) by integrating global and local visual features through hypergraph fusion. Constructed a hypergraph that captures relationships between image tags and features to improve retrieval accuracy. Incorporated pseudo-relevance feedback to refine results by identifying potentially relevant images. Experimental results demonstrate a significant boost in retrieval performance on platforms like Flickr.</p>
-                        <div class="publication-meta">
-                            <span><i class="fas fa-calendar"></i> 2024</span>
-                            <span><i class="fas fa-tag"></i><u style="text-decoration-color:skyblue"><a href="https://www.irjmets.com/paperdetail.php?paperId=a58fe5fca987852f8e07a4b18b021105&title=Hypergraph+Fusion+and+Pseudo-Relevance+Feedbackfor+Enhanced+Tag-Based+Image+Retrieval+&authpr=Chakradhar+Reddy" target="_blank" style="color:skyblue">Show Publication</a></u></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <div class="publication-content">
-                        <h3 style="text-align: justify;">Contrast-Induced Nephropathy in the Context of Interventional Cardiology</h3>
-                        <p style="text-align: justify;">Investigated the pathophysiology and clinical impact of Contrast-Induced Nephropathy (CIN) following cardiac interventions. Highlighted key risk factors including chronic kidney disease, diabetes, and advanced age. Evaluated both conventional preventive measures like hydration and emerging strategies such as controlled diuresis. Discussed the limited effectiveness of agents like N-acetylcysteine and emphasized evidence-based approaches to reduce CIN incidence.</p>
-                        <div class="publication-meta">
-                            <span><i class="fas fa-calendar"></i> 2024</span>
-                            <span><i class="fas fa-tag"></i><u style="text-decoration-color:skyblue"><a href="https://iaeme.com/Home/article_id/JSE_02_02_001" target="_blank" style="color:skyblue">Show Publication</a></u></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <div class="publication-content">
-                        <h3 style="text-align: justify;">Enhanced Insights into Temporal and Seasonal Fluctuations of Arsenic in Groundwater: Incorporating Hydrochemical Analysis for Sustainable Management of Pollution</h3>
-                        <p style="text-align: justify;">Studied arsenic contamination trends in the Ganga-Brahmaputra river basin using hydrochemical analysis. Investigated how seasonal and temporal changes, particularly rainfall and groundwater flow, affect arsenic levels. Applied advanced analytical techniques to understand the mobilization and persistence of arsenic. Findings support the need for sustainable groundwater management to mitigate long-term environmental and public health risks.</p>
-                        <div class="publication-meta">
-                            <span><i class="fas fa-calendar"></i> 2024</span>
-                            <span><i class="fas fa-tag"></i><u style="text-decoration-color:skyblue"><a href="https://iaeme.com/Home/article_id/IJHISI_01_01_001" target="_blank" style="color:skyblue">Show Publication</a></u></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2>Interested in software, backend, or AI engineering work?</h2>
+          <p>I’m based in Buffalo, New York and can be reached directly by email or through LinkedIn.</p>
         </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:chakradhar3724@gmail.com">chakradhar3724@gmail.com</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/pchakradhar-reddy/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="button secondary" href="Chakradhar_Reddy_Resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p style="text-align: justify;">I'm always open to discussing new opportunities, collaborations, or just having a chat about AI/ML and technology.</p>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>chakradhar3724@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+1 (716)292-2583</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-globe"></i>
-                        <div>
-                            <h4>Website</h4>
-                            <p>pchakradhar.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/pchakradhar-reddy/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/chakradhar3724" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="mailto:chakradhar3724@gmail.com"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-                
-    </section>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Chakradhar Reddy Peddavenkatagari</span>
+      <span>Built for clarity, performance, and accessibility.</span>
+    </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2025 Chakradhar Reddy Peddavenkatagari. All rights reserved.</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwSaNw9y9VqJ8DzBne2tt1IPv6RgOwBLGVOwvmjVS2WXSP8MJvTX9PrZFf6xqXAXo2k/exec'; // Double check this is correct!
-  const form = document.getElementById('contactForm');
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    const originalText = btn.innerText;
-    
-    // UI Feedback
-    btn.disabled = true;
-    btn.innerText = "Sending...";
-
-    const formData = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    
-    xhr.open("POST", scriptURL);
-    
-    xhr.onreadystatechange = function() {
-      // Google Apps Script usually returns a 302 redirect, 
-      // which XHR follows automatically to a success state.
-      if (xhr.readyState === 4) {
-        alert("Success! Your message has been sent.");
-        form.reset();
-        btn.disabled = false;
-        btn.innerText = originalText;
-      }
-    };
-    ```
-    xhr.onerror = function() {
-      console.error("Submitting the Form.");
-      alert("Submission Completed, Thank you.");
-      btn.disabled = false;
-      btn.innerText = originalText;
-    };
-    ```
-    xhr.send(formData);
-  });
-</script>
+  <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
